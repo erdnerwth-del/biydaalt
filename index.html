@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эрдэнчулуун - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <p class="loading-text">Ачаалж байна...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-text">Эрдэнчулуун</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Нүүр</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Миний тухай</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Ур чадвар</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Туршлага</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Бүтээл</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Боловсрол</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Холбоо</a></li>
+                    <li class="nav-item">
+                        <button class="theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admin.html" class="nav-link admin-link" target="_blank">
+                            <i class="fas fa-lock"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-image">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                        </div>
+                        <h1 class="hero-title">Сайн уу, би <span class="highlight">Эрдэнчулуун</span></h1>
+                        <div class="typing-wrapper">
+                            <span id="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <p class="hero-subtitle">
+                            <i class="fas fa-university me-2"></i>Их Засаг Их Сургууль
+                        </p>
+                        <p class="hero-info">3-р курс | Програм хангамж / Мэдээллийн технологи</p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-eye me-2"></i>Миний бүтээл
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-envelope me-2"></i>Холбоо барих
+                            </a>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-stats">
+                        <div class="stat-card glass">
+                            <i class="fas fa-code"></i>
+                            <h3 class="counter" data-target="5">0</h3>
+                            <p>Төсөл</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3 class="counter" data-target="8">0</h3>
+                            <p>Ур чадвар</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3 class="counter" data-target="3">0</h3>
+                            <p>Курс</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <i class="fas fa-coffee"></i>
+                            <h3 class="counter" data-target="100">0</h3>
+                            <p>Кофе</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Танилцуулга</span>
+                <h2 class="section-title">Миний тухай</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <div class="about-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                        </div>
+                        <div class="floating-card glass">
+                            <i class="fas fa-code"></i>
+                            <span>Developer</span>
+                        </div>
+                        <div class="floating-card glass card-2">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <h3>Би хэн бэ?</h3>
+                        <p class="about-text">
+                            Сайн уу! Намайг <strong>Эрдэнчулуун</strong> гэдэг. Би Их Засаг Их Сургуулийн 
+                            Програм хангамж / Мэдээллийн технологийн 3-р курсын оюутан. Програмчлал, 
+                            вэб хөгжүүлэлт, мэдээллийн технологийн шинэ зүйлсийг сурах дуртай.
+                        </p>
+                        <div class="about-cards">
+                            <div class="about-card glass">
+                                <i class="fas fa-bullseye"></i>
+                                <h4>Зорилго</h4>
+                                <p>Мэргэжлийн програм хөгжүүлэгч болох</p>
+                            </div>
+                            <div class="about-card glass">
+                                <i class="fas fa-heart"></i>
+                                <h4>Сонирхол</h4>
+                                <p>Вэб хөгжүүлэлт, AI, өгөгдлийн сан</p>
+                            </div>
+                            <div class="about-card glass">
+                                <i class="fas fa-rocket"></i>
+                                <h4>Хүсэл</h4>
+                                <p>Шинэ технологи судлах, төсөл хөгжүүлэх</p>
+                            </div>
+                        </div>
+                        <div class="about-info-list">
+                            <div class="info-item">
+                                <i class="fas fa-university"></i>
+                                <span><strong>Сургууль:</strong> Их Засаг Их Сургууль</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-book"></i>
+                                <span><strong>Мэргэжил:</strong> Програм хангамж / МТ</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <span><strong>Курс:</strong> 3-р курс</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span><strong>Байршил:</strong> Монгол улс</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-primary mt-4">
+                            <i class="fas fa-download me-2"></i>CV татах
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Мэдлэг</span>
+                <h2 class="section-title">Ур чадвар</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="skills-category">
+                        <h3><i class="fas fa-code me-2"></i>Вэб хөгжүүлэлт</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-html5"></i> HTML</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-css3-alt"></i> CSS</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="skills-category">
+                        <h3><i class="fas fa-database me-2"></i>Бусад ур чадвар</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-php"></i> PHP</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-database"></i> MySQL</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-brain"></i> AI & Face Recognition</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Ажлын туршлага</span>
+                <h2 class="section-title">Туршлага</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Вэб хөгжүүлэлтийн төслүүд</h3>
+                        <p>Олон төрлийн вэб сайт, вэб аппликейшн хөгжүүлсэн. Frontend болон backend хөгжүүлэлтийн туршлагатай.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Өгөгдлийн сангийн удирдлага</h3>
+                        <p>MySQL өгөгдлийн санг зохион байгуулах, хурдан асуулга бичих, өгөгдлийн санг оптимизацлах туршлагатай.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Database Design</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Багийн төслүүд</h3>
+                        <p>Сургуулийн багийн төслүүдэд оролцож, хамтран ажиллах, код хуваалцах, Git ашиглах чадвартай.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Teamwork</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Agile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Сургуулийн даалгавар, систем хөгжүүлэлт</h3>
+                        <p>Сургуулийн хичээлүүдэд олон төрлийн программ, систем хөгжүүлж, програмчлалын хэлний гүнзгий мэдлэгтэй.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Бүтээлүүд</span>
+                <h2 class="section-title">Хийсэн Бүтээл</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row" id="projects-container">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <i class="fas fa-face-viewfinder"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>AI-д суурилсан царай таних ирцийн систем</h3>
+                            <p>Хиймэл оюун ухаан ашиглан оюутнуудын ирцийг автоматаар бүртгэх систем.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">AI</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github me-1"></i>GitHub
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt me-1"></i>Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Weather App</h3>
+                            <p>API ашиглан бодит цагийн цаг агаарын мэдээлэл харуулах вэб аппликейшн.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github me-1"></i>GitHub
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt me-1"></i>Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Admin Panel System</h3>
+                            <p>Хэрэглэгчид, өгөгдөл удирдах, статистик харуулах админ панел систем.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github me-1"></i>GitHub
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt me-1"></i>Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>Өөрийн ур чадвар, бүтээл, туршлагыг танилцуулх хувийн портфолио вэб сайт.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github me-1"></i>GitHub
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt me-1"></i>Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Database Management System</h3>
+                            <p>Өгөгдлийн санг удирдах, CRUD үйлдэл хийх, тайлан гаргах систем.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github me-1"></i>GitHub
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt me-1"></i>Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Сургалт</span>
+                <h2 class="section-title">Боловсрол</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-timeline">
+                <div class="edu-item">
+                    <div class="edu-icon glass">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="edu-content glass">
+                        <div class="edu-header">
+                            <h3>Их Засаг Их Сургууль</h3>
+                            <span class="edu-year">2022 - Одоо</span>
+                        </div>
+                        <p class="edu-degree">Програм хангамж / Мэдээллийн технологи</p>
+                        <p class="edu-desc">3-р курсын оюутан. Програмчлал, вэб хөгжүүлэлт, өгөгдлийн сангийн удирдлага, 
+                        мэдээллийн системийн анализ зэрэг хичээлүүдийг судалж байна.</p>
+                        <div class="edu-tags">
+                            <span class="tag">3-р курс</span>
+                            <span class="tag">Бакалавр</span>
+                            <span class="tag">IT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-stats row mt-5">
+                <div class="col-md-3 col-6">
+                    <div class="edu-stat glass">
+                        <i class="fas fa-book"></i>
+                        <h4 class="counter" data-target="20">0</h4>
+                        <p>Хичээл</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="edu-stat glass">
+                        <i class="fas fa-project-diagram"></i>
+                        <h4 class="counter" data-target="15">0</h4>
+                        <p>Төсөл</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="edu-stat glass">
+                        <i class="fas fa-code"></i>
+                        <h4 class="counter" data-target="5">0</h4>
+                        <p>Хэл</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="edu-stat glass">
+                        <i class="fas fa-certificate"></i>
+                        <h4 class="counter" data-target="3">0</h4>
+                        <p>Гэрчилгээ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Холбоо барих</span>
+                <h2 class="section-title">Холбоо барих</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h3>Надтай холбогдох</h3>
+                        <p>Та надтай холбоо барихыг хүсвэл доорх мэдээллийг ашиглана уу.</p>
+                        <div class="contact-items">
+                            <div class="contact-item glass">
+                                <div class="contact-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Facebook</h4>
+                                    <a href="#">Эрдэнчулуун</a>
+                                </div>
+                            </div>
+                            <div class="contact-item glass">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>GitHub</h4>
+                                    <a href="#">@erdenechuluun</a>
+                                </div>
+                            </div>
+                            <div class="contact-item glass">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:erdenechuluun@email.com">erdenechuluun@email.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item glass">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Утас</h4>
+                                    <a href="tel:+97699119911">+976 9911 9911</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper glass">
+                        <h3>Зурвас илгээх</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label><i class="fas fa-user me-2"></i>Нэр</label>
+                                        <input type="text" class="form-control" placeholder="Таны нэр" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label><i class="fas fa-envelope me-2"></i>Имэйл</label>
+                                        <input type="email" class="form-control" placeholder="Имэйл хаяг" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label><i class="fas fa-heading me-2"></i>Гарчиг</label>
+                                <input type="text" class="form-control" placeholder="Зурвасын гарчиг" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label><i class="fas fa-comment me-2"></i>Зурвас</label>
+                                <textarea class="form-control" rows="5" placeholder="Зурвасаа бичнэ үү..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Илгээх
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Эрдэнчулуун. Бүх эрх хуулиар хамгаалагдсан.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
